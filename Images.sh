@@ -27,7 +27,7 @@ CHOICE=$(dialog --clear \
 
 clear
 case $CHOICE in
-        1)wget https://dl.google.com/dl/android/aosp/marlin-pq3a.190801.002-factory-13dbb265.zip 2>&1 | sed -u 's/.* \([0-9]\+%\)\ \+\([0-9.]\+.\) \(.*\)/\1\n# Downloading at \2\/s, ETA \3/' | zenity --progress --title="Downloading Marlin.."
+        1)wget https://dl.google.com/dl/android/aosp/marlin-pq3a.190801.002-factory-13dbb265.zip  2>&1 | sed -u 's/.* \([0-9]\+%\)\ \+\([0-9.]\+.\) \(.*\)/\1\n# Downloading at \2\/s, ETA \3/' | zenity --progress --title="Downloading Marlin.."
             echo "You chose Marlin"
             ;;
         2)wget https://dl.google.com/dl/android/aosp/bonito-qq2a.200501.001.b2-factory-10a8e252.zip 2>&1 | sed -u 's/.* \([0-9]\+%\)\ \+\([0-9.]\+.\) \(.*\)/\1\n# Downloading at \2\/s, ETA \3/' | zenity --progress --title="Downloading Bonito..."
